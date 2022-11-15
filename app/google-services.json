@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "505270242178",
+    "project_id": "mobiledois-59d4f",
+    "storage_bucket": "mobiledois-59d4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505270242178:android:b71a06a5bfecd1fa1a5d9b",
+        "android_client_info": {
+          "package_name": "com.example.mobiledois"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505270242178-f2g30ao0fju36gmn2bid5fepr4k8obpd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw2V1DbHoadK3dLOtX7KCxAZHx5ZVKNxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505270242178-f2g30ao0fju36gmn2bid5fepr4k8obpd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
