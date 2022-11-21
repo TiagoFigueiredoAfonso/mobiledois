@@ -21,7 +21,7 @@ public class MainActivityCadastrarUsuario extends AppCompatActivity {
 
     private DatabaseReference referencia = FirebaseDatabase.getInstance().getReference();
     private EditText nomePessoa, emailPessoa;
-    private Button btnSalvarPessoa, btnListar;
+    private Button btnSalvarPessoa, btnListar, btnApi, btnApi2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +32,8 @@ public class MainActivityCadastrarUsuario extends AppCompatActivity {
         emailPessoa = findViewById(R.id.emailPessoa);
         btnSalvarPessoa = findViewById(R.id.btnSalvarPessoa);
         btnListar = findViewById(R.id.btnListar);
+        btnApi = findViewById(R.id.btnApi);
+        btnApi2 = findViewById(R.id.btnApi2);
 
         Pessoa p = new Pessoa();
 
@@ -51,6 +53,23 @@ public class MainActivityCadastrarUsuario extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivityCadastrarUsuario.this, MainActivityLogado.class);
+                startActivity(i);
+            }
+        });
+
+        btnApi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivityCadastrarUsuario.this, MainActivityApiLista.class);
+                startActivity(i);
+
+            }
+        });
+
+        btnApi2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivityCadastrarUsuario.this, MainActivityApi2Lista.class);
                 startActivity(i);
             }
         });
